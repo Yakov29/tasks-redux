@@ -2,6 +2,8 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeTask, toggleTask, setFilter } from "../../redux/actions";
 
+import "./List.css";
+
 const List = () => {
   const tasks = useSelector((state) => state.tasks);
   const filter = useSelector((state) => state.filter);
@@ -23,6 +25,7 @@ const List = () => {
     <>
       <div style={{ marginBottom: "10px" }}>
         <button
+          className="list__button"
           type="button"
           style={{ fontWeight: filter === "all" ? "bold" : "normal" }}
           onClick={() => dispatch(setFilter("all"))}
@@ -30,6 +33,7 @@ const List = () => {
           Всі
         </button>
         <button
+          className="list__button"
           type="button"
           style={{ fontWeight: filter === "active" ? "bold" : "normal" }}
           onClick={() => dispatch(setFilter("active"))}
@@ -37,6 +41,7 @@ const List = () => {
           Активні
         </button>
         <button
+          className="list__button"
           type="button"
           style={{ fontWeight: filter === "completed" ? "bold" : "normal" }}
           onClick={() => dispatch(setFilter("completed"))}

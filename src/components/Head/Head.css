@@ -1,0 +1,57 @@
+.head {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.head__title {
+  font-size: 30px;
+}
+
+.head__box {
+  border: 2px black;
+  border-radius: 50px;
+}
+
+.head__data {
+  font-size: 20px;
+}
+
+.head__form {
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 300px;
+}
+
+input {
+  width: 90%;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.head__submit {
+  margin-top: 10px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+.head__filter {
+  padding: 10px;
+  border: 2px solid gray;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+
+.list__button{
+    margin-left: 20px;
+    width: 150px;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid gray;
+}
